@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "url-field",
     "publisher": "krypu",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "URL Field",
     "description": "A work item custom control to show a clickable URL.",
     "public": true,
@@ -41,7 +41,7 @@
             "uri": "https://github.com/krypu/azure-devops-extension-url-field/issues"
         },
         "license": {
-            "uri": "https://github.com/krypu/azure-devops-extension-url-field/LICENSE.txt"
+            "uri": "https://github.com/krypu/azure-devops-extension-url-field/blob/main/LICENSE.txt"
         }
     },
     "screenshots": [
