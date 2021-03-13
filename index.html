@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>URL Field</title>
+</head>
+
+<body>
+    <script src="lib/VSS.SDK.min.js"></script>
+	
+    <script>
+		// Initialize the ADO integration
+        VSS.init({
+            explicitNotifyLoaded: true,
+			usePlatformScripts: true,
+            applyTheme: true
+        });
+	</script>
+	
+	<script src="urlFieldControl.js"></script>
+    
+    <div id="container" style="width: 100%;">
+        <a id="urlField" target="_blank" style="padding-left: 6px; width: 100%; display: block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"></a>
+    </div>
+</body>
+</html>
