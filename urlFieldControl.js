@@ -7,6 +7,7 @@ function urlFieldUpdate (workItemServices) {
         var url = VSS.getConfiguration().witInputs.Url;
         var title = VSS.getConfiguration().witInputs.Title;
         var field = VSS.getConfiguration().witInputs.Field;
+        var generate = (VSS.getConfiguration().witInputs.Generate.toLowerCase() === 'false');
         
         service.getFieldValues([VSS.getConfiguration().witInputs.Field]).then(function (value) {
             var fieldKey = value[field];
@@ -15,8 +16,13 @@ function urlFieldUpdate (workItemServices) {
                 title = url;
             }
             var urlField = document.getElementById('urlField');
-            urlField.innerText = title;
-            urlField.href = urlField.title = url;
+            if (!generate || !isEmpty(fieldKey)) {
+                urlField.innerText = title;
+                urlField.href = urlField.title = url;
+            } else {
+                urlField.innerText = "";
+                urlField.href = urlField.title = "";
+            }
         });
     });
 };
