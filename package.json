@@ -1,6 +1,6 @@
 {
   "name": "UrlField",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This custom control allows you to add a clickable URL on your workitem form, that can optionally use another field as a variable in that URL.",
   "main": "index.js",
   "scripts": {
