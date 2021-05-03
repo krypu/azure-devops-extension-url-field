@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "url-field",
   "publisher": "krypu",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "name": "URL Field",
   "description": "A work item custom control to show a clickable URL.",
   "public": true,
