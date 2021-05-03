@@ -7,7 +7,7 @@ function urlFieldUpdate (workItemServices) {
         var url = VSS.getConfiguration().witInputs.Url;
         var titleUrlText = VSS.getConfiguration().witInputs.Title;
         var fieldName = VSS.getConfiguration().witInputs.Field;
-        var hideUrlIfEmptyField = (VSS.getConfiguration().witInputs.HideUrlIfEmptyField.toLowerCase() === 'false');
+        var hideUrlIfEmptyField = (VSS.getConfiguration().witInputs.HideUrlIfEmptyField.toLowerCase() === 'true');
         
         service.getFieldValues([VSS.getConfiguration().witInputs.Field]).then(function (value) {
             var fieldValue = value[fieldName];

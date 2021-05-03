@@ -102,8 +102,8 @@
                   },
                   {
                       "id": "HideUrlIfEmptyField",
-                      "name": "Hide if empty Field",
-                      "description": "Hide the URL when Field value is empty",
+                      "name": "Hide if empty Field (true/false)",
+                      "description": "Hide the URL when Field value is empty (true/false)",
                       "validation": {
                         "dataType": "Boolean",
                         "isRequired": false
