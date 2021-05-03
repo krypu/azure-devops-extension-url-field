@@ -1,143 +1,143 @@
 {
-    "manifestVersion": 1,
-    "id": "url-field",
-    "publisher": "krypu",
-    "version": "1.0.2",
-    "name": "URL Field",
-    "description": "A work item custom control to show a clickable URL.",
-    "public": true,
-    "categories": ["Azure Boards"],
-    "icons": {
-        "default": "images/logo.png"
-    },
-    "content": {
-        "details": {
-            "path": "README.md"
-        }
-    },
-    "targets": [
-        {
-            "id": "Microsoft.VisualStudio.Services"
-        }
-    ],
-    "tags": [
-        "Work Item",
-        "Work Item control",
-        "URL",
-        "Link"
-    ],
-	"scopes": [
-        "vso.work"
-	],
-    "repository": {
-        "type": "git",
-        "uri": "https://github.com/krypu/azure-devops-extension-url-field"
-    },
-    "links": {
-        "repository": {
-            "uri": "https://github.com/krypu/azure-devops-extension-url-field"
-        },
-        "issues": {
-            "uri": "https://github.com/krypu/azure-devops-extension-url-field/issues"
-        },
-        "license": {
-            "uri": "https://github.com/krypu/azure-devops-extension-url-field/blob/main/LICENSE.txt"
-        }
-    },
-    "screenshots": [
-        {
-            "path": "images/screenshot-1.png"
-        },
-        {
-            "path": "images/screenshot-2.png"
-        },
-        {
-            "path": "images/screenshot-3.png"
-        }
-    ],
-    "contributions": [
-    {
-      "id": "url-field",
-      "type": "ms.vss-work-web.work-item-form-control",
-      "description": "A work item custom control to show a clickable URL.",
-      "targets": [
-        "ms.vss-work-web.work-item-form"
-      ],
-      "properties": {
-        "name": "URL Field",
-        "description": "A work item custom control to show a clickable URL.",
-        "uri": "index.html",
-        "height": "33",
-        "inputs": [
-          {
-            "id": "Url",
-            "name": "URL",
-            "description": "Provide an URL for a new link. Use {field} to include a value from a field selected below.",
-            "validation": {
-              "dataType": "String",
-              "isRequired": true
-            }
-          },
-          {
-            "id": "Title",
-            "name": "Title",
-            "description": "Show a title instead of a full URL.",
-            "validation": {
-              "dataType": "String",
-              "isRequired": false
-            }
-          },
-          {
-            "id": "Field",
-            "name": "Field",
-            "description": "Select a field for a variable to be used in URL building.",
-            "type": "WorkitemField",
-            "properties": {
-              "workItemFieldTypes": [ "String", "Integer", "Double" ]
-            },
-            "validation": {
-              "dataType": "String",
-              "isRequired": false
-            }
-          },
-          {
-            "id": "Generate",
-            "name": "Generate",
-            "description": "(true/false) If the field is empty should the URL be generated?",
-            "validation": {
-              "dataType": "Boolean",
-              "isRequired": false
-            }
-          }
-        ]
+  "manifestVersion": 1,
+  "id": "url-field",
+  "publisher": "krypu",
+  "version": "1.0.2",
+  "name": "URL Field",
+  "description": "A work item custom control to show a clickable URL.",
+  "public": true,
+  "categories": ["Azure Boards"],
+  "icons": {
+      "default": "images/logo.png"
+  },
+  "content": {
+      "details": {
+          "path": "README.md"
       }
-    }
+  },
+  "targets": [
+      {
+          "id": "Microsoft.VisualStudio.Services"
+      }
   ],
-    "files": [
-        {
-            "path": "index.html",
-            "addressable": true
-        },
-        {
-            "path": "urlFieldControl.js",
-            "addressable": true
-        },
-        {
-            "path": "images/logo.png",
-            "addressable": true
-        },
-        {
-            "path": "README.md",
-            "addressable": true
-        },
-        {
-            "path": "LICENSE.txt",
-            "addressable": true
-        },
-        {
-            "path": "node_modules/vss-web-extension-sdk/lib",
-            "addressable": true,
-            "packagePath": "lib"
-        }
-    ]
+  "tags": [
+      "Work Item",
+      "Work Item control",
+      "URL",
+      "Link"
+  ],
+"scopes": [
+      "vso.work"
+],
+  "repository": {
+      "type": "git",
+      "uri": "https://github.com/krypu/azure-devops-extension-url-field"
+  },
+  "links": {
+      "repository": {
+          "uri": "https://github.com/krypu/azure-devops-extension-url-field"
+      },
+      "issues": {
+          "uri": "https://github.com/krypu/azure-devops-extension-url-field/issues"
+      },
+      "license": {
+          "uri": "https://github.com/krypu/azure-devops-extension-url-field/blob/main/LICENSE.txt"
+      }
+  },
+  "screenshots": [
+      {
+          "path": "images/screenshot-1.png"
+      },
+      {
+          "path": "images/screenshot-2.png"
+      },
+      {
+          "path": "images/screenshot-3.png"
+      }
+  ],
+  "contributions": [
+      {
+          "id": "url-field",
+          "type": "ms.vss-work-web.work-item-form-control",
+    "description": "A work item custom control to show a clickable URL.",
+          "targets": [
+              "ms.vss-work-web.work-item-form"
+          ],
+          "properties": {
+              "name": "URL Field",
+              "description": "A work item custom control to show a clickable URL.",
+              "uri": "index.html",
+              "height": "33",
+              "inputs": [
+                  {
+                      "id": "Url",
+                      "name": "URL",
+                      "description": "Provide an URL for a new link. Use {field} to include a value from a field selected below.",
+                      "validation": {
+                          "dataType": "String",
+                          "isRequired": true
+                      }
+                  },
+                  {
+                      "id": "Title",
+                      "name": "Title",
+                      "description": "Show a title instead of a full URL.",
+                      "validation": {
+                          "dataType": "String",
+                          "isRequired": false
+                      }
+                  },
+                  {
+                      "id": "Field",
+                      "name": "Field",
+                      "description": "Select a field for a variable to be used in URL building.",
+                      "type": "WorkitemField",
+                      "properties": {
+                          "workItemFieldTypes": ["String", "Integer", "Double"]
+                      },
+                      "validation": {
+                          "dataType": "String",
+                          "isRequired": false
+                      }
+                  },
+                  {
+                      "id": "HideUrlIfEmptyField",
+                      "name": "Hide if empty Field",
+                      "description": "Hide the URL when Field value is empty",
+                      "validation": {
+                        "dataType": "Boolean",
+                        "isRequired": false
+                      }
+                    }
+              ]
+          }
+      }
+  ],
+  "files": [
+      {
+          "path": "index.html",
+          "addressable": true
+      },
+      {
+          "path": "urlFieldControl.js",
+          "addressable": true
+      },
+      {
+          "path": "images/logo.png",
+          "addressable": true
+      },
+      {
+          "path": "README.md",
+          "addressable": true
+      },
+      {
+          "path": "LICENSE.txt",
+          "addressable": true
+      },
+      {
+          "path": "node_modules/vss-web-extension-sdk/lib",
+          "addressable": true,
+          "packagePath": "lib"
+      }
+  ]
 }
