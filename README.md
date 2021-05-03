@@ -26,3 +26,7 @@ For scenario 3, you simple need to enter *only* `{field}` in URL option, so ever
 Licensed under the EUPL-1.2-or-later
 
 Full text in 23 official languages is available at https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
+
+### Special thanks to
+
+- Doug Bloch (https://github.com/dbloch3643) for an idea and implementation support on "Hide URL if Field is empty" functionality.

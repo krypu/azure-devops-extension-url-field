@@ -5,18 +5,24 @@
 function urlFieldUpdate (workItemServices) {
     workItemServices.WorkItemFormService.getService().then(function (service) {
         var url = VSS.getConfiguration().witInputs.Url;
-        var title = VSS.getConfiguration().witInputs.Title;
-        var field = VSS.getConfiguration().witInputs.Field;
+        var titleUrlText = VSS.getConfiguration().witInputs.Title;
+        var fieldName = VSS.getConfiguration().witInputs.Field;
+        var hideUrlIfEmptyField = (VSS.getConfiguration().witInputs.HideUrlIfEmptyField.toLowerCase() === 'true');
         
         service.getFieldValues([VSS.getConfiguration().witInputs.Field]).then(function (value) {
-            var fieldKey = value[field];
-            url = url.replace('{field}', fieldKey);
-            if (isEmpty(title)) {
-                title = url;
+            var fieldValue = value[fieldName];
+            url = url.replace('{field}', fieldValue);
+            if (isEmpty(titleUrlText)) {
+                titleUrlText = url;
             }
             var urlField = document.getElementById('urlField');
-            urlField.innerText = title;
-            urlField.href = urlField.title = url;
+            if (hideUrlIfEmptyField && isEmpty(fieldValue)) {
+                urlField.innerText = "";
+                urlField.href = urlField.title = "";
+            } else {
+                urlField.innerText = titleUrlText;
+                urlField.href = urlField.title = url;
+            }
         });
     });
 };
