@@ -1,6 +1,13 @@
 # URL Field - a custom work item control
 ## Azure DevOps extension
 
+### Year 2023 notification
+Dear Users,
+Due to greatly reduced amount of free time since last year (a family of five!), I am unable to continue supporting this project at all.
+Please accept its current state as it is and feel free to fork it and publish your own version.
+Best regards,
+Krystian
+
 ### Usage
 
 This custom control allows you to add a clickable URL on your workitem form, that can optionally use another field as a variable in that URL. Depending on your needs, there are three different ways you can use this custom control extension:
@@ -26,7 +33,3 @@ For scenario 3, you simple need to enter *only* `{field}` in URL option, so ever
 Licensed under the EUPL-1.2-or-later
 
 Full text in 23 official languages is available at https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
-
-### Special thanks to
-
-- Doug Bloch (https://github.com/dbloch3643) for an idea and implementation support on "Hide URL if Field is empty" functionality.
