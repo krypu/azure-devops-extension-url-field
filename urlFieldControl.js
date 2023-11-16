@@ -11,7 +11,7 @@ function urlFieldUpdate (workItemServices) {
         
         service.getFieldValues([VSS.getConfiguration().witInputs.Field]).then(function (value) {
             var fieldValue = value[fieldName];
-            url = url.replace('{field}', fieldValue);
+            url = url.replaceAll('{field}', fieldValue);
             if (isEmpty(titleUrlText)) {
                 titleUrlText = url;
             }
